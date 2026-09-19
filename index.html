@@ -4,78 +4,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio of Shahla Tasnim Meem, a Computer Science student and Cybersecurity minor.">
+
     <title>Shahla Tasnim Meem | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Shahla Tasnim Meem</h1>
-    <p>Computer Science Student | Cybersecurity Minor</p>
+    <!-- Mobile navigation button -->
+    <button class="menu-button" onclick="toggleMenu()" aria-label="Open navigation">
+        ☰
+    </button>
 
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science student at Farmingdale State College
-        with a minor in Cybersecurity. I enjoy work that involves creativity,
-        solving problems, and learning new things.
-    </p>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
 
-<h2>Projects</h2>
+        <div class="profile-picture">
+            <span>SM</span>
+        </div>
 
-<h3>CookBook / Food App</h3>
-<p>
-    A group project focused on designing a food and recipe application,
-    including UI design and prototyping with Figma.
-</p>
-<a href="https://github.com/tasnimmeem1/group-project-2025" target="_blank">
-    View on GitHub
-</a>
+        <h2 class="sidebar-name">Shahla T. Meem</h2>
 
-<h3>RideShare Priority Queue</h3>
-<p>
-    A Java project that uses a priority queue to organize
-    and manage ride requests.
-</p>
-<a href="https://github.com/tasnimmeem1/rideShare3" target="_blank">
-    View on GitHub
-</a>
+        <nav>
+            <a href="#about">👤 About</a>
+            <a href="#projects">▣ Projects</a>
+            <a href="#skills">▥ Skills</a>
+            <a href="#education">◆ Education</a>
+            <a href="#contact">✉ Contact</a>
+        </nav>
 
+    </aside>
 
-<h3>JavaFX BookStore Application</h3>
-<p>
-    A Java desktop application developed using JavaFX
-    for a bookstore management system.
-</p>
-<a href="https://github.com/tasnimmeem1/JavaFXML" target="_blank">
-    View on GitHub
-</a>
+    <!-- Main content -->
+    <main>
 
+        <!-- Introduction -->
+        <section id="about" class="hero">
 
-    <h2>What I Can Do</h2>
+            <div class="hero-content">
 
-    <ul>
-        <li>Java Programming</li>
-        <li>Python Programming</li>
-        <li>SQL and Database Management</li>
-        <li>Backend Development</li>
-        <li>Basic Cybersecurity</li>
-        <li>Git and GitHub</li>
-        <li>API Testing with Postman</li>
-        <li>Automated Testing with Selenium</li>
-        <li>JSON</li>
-        <li>Behavior-Driven Testing with Cucumber</li>
-    </ul>
+                <p class="small-heading">HELLO, I AM</p>
 
-      <h2>Connect With Me</h2>
+                <h1>
+                    <span>Shahla Tasnim Meem</span>
+                </h1>
 
-    <p>
-        <a href="https://www.linkedin.com/in/shahla-meem-8601b8328" target="_blank">LinkedIn</a>
-    </p>
+                <h2>
+                    Computer Science Student
+                    <span class="divider">|</span>
+                    Cybersecurity Minor
+                </h2>
 
-    <p>
-        <a href="https://github.com/tasnimmeem1" target="_blank">GitHub</a>
-    </p>
+                <p class="introduction">
+                    I am a Computer Science student at Farmingdale State
+                    College with a minor in Cybersecurity. I enjoy work that
+                    involves creativity, solving problems, and learning new
+                    things. My career goal is to become a backend developer
+                    specializing in database security.
+                </p>
+
+                <div class="social-buttons">
+
+                    <a href="https://github.com/tasnimmeem1"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="social-circle"
+                       aria-label="GitHub">
+                        GH
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shahla-meem-8601b8328"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="social-circle"
+                       aria-label="LinkedIn">
+                        in
+                    </a>
+
+                </div>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="button primary-button">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="button outline-button">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="code-window">
+
+                <div class="window-header">
+                    <span class="red-dot"></span>
+                    <span class="yellow-dot"></span>
+                    <span class="green-dot"></span>
+                </div>
+
+                <pre><code><span class="code-blue">class</span> Developer {
+
+  name = <span class="code-yellow">"Shahla"</span>;
+
+  major =
+    <span class="code-yellow">"Computer Science"</span>;
+
+  interests = [
+    <span class="code-yellow">"Backend Development"</span>,
+    <span class="code-yellow">"Database Security"</span>,
+    <span class="code-yellow">"Cybersecurity"</span>
+  ];
+
+}</code></pre>
+
+            </div>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="content-section white-section">
+
+            <div class="section-title">
+                <p>SELECTED WORK</p>
+                <h2>Projects</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <div class="project-number">01</div>
+
+                    <h3>CookBook / Food App</h3>
+
+                    <p>
+                        A group project focused on designing a food and recipe
+                        application, including user-interface design and
+                        prototyping with Figma.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Figma</span>
+                        <span>UI Design</span>
+                        <span>Group Project</span>
+                    </div>
+
+                    <a href="https://github.com/tasnimmeem1/group-project-2025"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub →
+                    </a>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-number">02</div>
+
+                    <h3>RideShare Priority Queue</h3>
+
+                    <p>
+                        A Java project that uses a priority queue to organize
+                        and manage ride requests based on their priority.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Priority Queue</span>
+                        <span>Data Structures</span>
+                    </div>
+
+                    <a href="https://github.com/tasnimmeem1/rideShare3"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub →
+                    </a>
+
+                </article>
+
+                <article class="project-card">
+
+                    <div class="project-number">03</div>
+
+                    <h3>JavaFX Bookstore Application</h3>
+
+                    <p>
+                        A Java desktop application developed with JavaFX for
+                        managing bookstore information through a graphical
+                        user interface.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>GUI</span>
+                    </div>
+
+                    <a href="https://github.com/tasnimmeem1/JavaFXML"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="content-section gray-section">
+
+            <div class="section-title">
+                <p>WHAT I WORK WITH</p>
+                <h2>Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>Java, Python, SQL, NoSQL, JSON and Basic COBOL</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Software Development</h3>
+                    <p>Backend Development, JavaFX, FXML, Maven and APIs</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Testing</h3>
+                    <p>Postman, Selenium and Behavior-Driven Testing with Cucumber</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Development Tools</h3>
+                    <p>Git, GitHub, Figma, Jira and IntelliJ IDEA</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cybersecurity</h3>
+                    <p>Wireshark, network security, cryptography and database security</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <p>Problem solving, teamwork, communication and documentation</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="content-section white-section">
+
+            <div class="section-title">
+                <p>ACADEMIC JOURNEY</p>
+                <h2>Education</h2>
+            </div>
+
+            <div class="education-card">
+
+                <div class="college-logo">
+                    FSC
+                </div>
+
+                <div class="education-information">
+
+                    <h3>Farmingdale State College, SUNY</h3>
+
+                    <p class="degree">
+                        Bachelor of Science in Computer Science
+                    </p>
+
+                    <p>Minor in Cybersecurity</p>
+
+                    <p>Expected Graduation: December 2027</p>
+
+                    <p class="honors">
+                        President's List and Dean's List
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="content-section contact-section">
+
+            <div class="section-title">
+                <p>LET US CONNECT</p>
+                <h2>Contact</h2>
+            </div>
+
+            <div class="contact-box">
+
+                <div>
+                    <h3>Interested in connecting with me?</h3>
+
+                    <p>
+                        I am interested in backend development, database
+                        security, internships, and collaborative projects.
+                    </p>
+                </div>
+
+                <div class="contact-links">
+
+                    <a href="https://www.linkedin.com/in/shahla-meem-8601b8328"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button primary-button">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://github.com/tasnimmeem1"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="button outline-button">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 Shahla Tasnim Meem</p>
+        </footer>
+
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("show-sidebar");
+        }
+
+        const navigationLinks = document.querySelectorAll(".sidebar nav a");
+
+        navigationLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                document.getElementById("sidebar")
+                        .classList.remove("show-sidebar");
+            });
+        });
+    </script>
+
 </body>
-  
 
 </html>
